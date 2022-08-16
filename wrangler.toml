@@ -13,4 +13,4 @@ main = "worker/worker.js"
 # include = ["dist/*","src/*"]
 name = "fetch-rs"
 #route = "https://sausage.saltbank.org/api*"
-route = { pattern = "https://api.saltbank.org*", zone_id = "6202e995eadc857cd8e97e8ba608286d" }
+route = { pattern = "https://api.saltbank.org/*", zone_id = "6202e995eadc857cd8e97e8ba608286d" }
