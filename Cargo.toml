@@ -8,9 +8,9 @@ description = "A worker with fetch functionality demo."
 license = "MIT OR Apache-2.0"
 
 [lib]
-name = "build"
-dir = "src"
-path = "./lib.rs"
+#name = "build"
+#dir = "src" # https://github.com/cloudflare/rustwasm-worker-template/blob/master/Cargo.toml
+#path = "./lib.rs"
 crate-type = ["cdylib", "rlib"]
 
 [features]
