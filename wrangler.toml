@@ -1,4 +1,4 @@
-name = "worker_fetch_demo"
+name = "fetch-rs-dev"
 #type = "rust"
 account_id = "9ddca7c9df604668fc6d14f079b2f066" 
 workers_dev = false
