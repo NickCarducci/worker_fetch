@@ -1,7 +1,15 @@
 name = "worker_fetch_demo"
-type = "rust"
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
+#type = "rust"
+account_id = "9ddca7c9df604668fc6d14f079b2f066" 
+workers_dev = false
+#route = ""
+#zone_id = ""
+main = "worker/worker.js"
  
+
+[env.production]
+# exclude = ["node_modules","*"]
+# include = ["dist/*","src/*"]
+name = "fetch-rs"
+#route = "https://sausage.saltbank.org/api*"
+route = { pattern = "https://api.saltbank.org*", zone_id = "6202e995eadc857cd8e97e8ba608286d" }
