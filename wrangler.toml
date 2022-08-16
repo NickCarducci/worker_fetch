@@ -5,7 +5,7 @@ account_id = "9ddca7c9df604668fc6d14f079b2f066"
 workers_dev = false
 #route = ""
 #zone_id = ""
-main = "worker/src/lib.rs"
+main = "worker/lib.rs"
  
 
 [env.production]
