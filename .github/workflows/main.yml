@@ -8,7 +8,7 @@ on:
       - published
   push:
     branches:
-      - maintenance
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
