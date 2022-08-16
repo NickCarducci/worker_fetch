@@ -9,6 +9,7 @@ license = "MIT OR Apache-2.0"
 
 [lib]
 name = "build"
+dir = "src"
 path = "./lib.rs"
 crate-type = ["cdylib", "rlib"]
 
