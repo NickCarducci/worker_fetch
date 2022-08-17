@@ -25,3 +25,7 @@ __
 >is a job atomicity (expense/hour) value from labor if margins expand and price is constant
 
 `Tokens you have generated that can be used to access the GitHub API. Last used within the last week` repo & workflows
+
+`Settings>Actions:"Workflow Permissions" read repository content permissions`
+
+"Workflows have read permissions in the repository for the contents scope only."
