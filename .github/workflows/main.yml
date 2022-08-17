@@ -109,7 +109,7 @@ jobs:
           #authorization: ${{ secrets.AUTHORIZATION }}
           apiToken: ${{ secrets.CF_API_TOKEN }} # https://superuser.com/questions/1575061/how-do-i-download-and-extract-a-tar-in-one-command-while-extracting-only-a-sing
           #preCommands: curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo install --git https://github.com/cloudflare/workers-rs && PATH="$PATH:$HOME/.cache/.wasm-pack/.wasm-bindgen-cargo-install-0.2.81/bin" && curl -L 'https://github.com/WebAssembly/binaryen/releases/download/version_90/binaryen-version_90-x86-linux.tar.gz' | tar  -xz # && PATH="$PATH:$HOME/.cargo/bin" # CF_CF_API_KEY: ${{ secrets.CF_API_KEY }} wrangler 
-          preCommands: curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo install --git https://github.com/cloudflare/workers-rs
+          preCommands: curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" # && cargo install --git https://github.com/cloudflare/workers-rs
           #CF_CF_API_KEY: ${{ secrets.CF_API_KEY }} wrangler dev && cargo install --git https://github.com/cloudflare/workers-rs --branch zeb/esbuild
           #command: actions parses this "CF_CF_API_KEY: ${{ secrets.CF_API_KEY }} wrangler dev"
           #wrangler2
