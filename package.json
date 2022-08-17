@@ -6,7 +6,7 @@
   "description": "mastercard worker for vaumoney of vaults.biz",
   "main": "worker/worker.js",
   "scripts": {
-    "build": "worker-build --release"
+    "build": "./worker-build --release"
   },
   "author": "Nick <nmcarducci@gmail.com>",
   "license": "UNLICENSED",
