@@ -102,9 +102,11 @@ jobs:
           #USER: root
           
       - name: Build
+        shell: bash
         env:
           USER: root
-        run: sudo npm run build
+        run: >
+          npm run build
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
