@@ -23,7 +23,7 @@ jobs:
       - name: Token GH & root
         uses: actions/checkout@v2 #main
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Navigate to repo
         run: cd $GITHUB_WORKSPACE
