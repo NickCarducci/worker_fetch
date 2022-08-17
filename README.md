@@ -17,3 +17,11 @@ other projects:
 forked from:
 
 # [cloudflare-rust-fetch-demo-1973871eb6c4](https://github.com/ffimnsr-ext/cloudflare-rust-fetch-demo-1973871eb6c4/blob/master/Cargo.toml)
+
+__
+
+`Settings>Developer settings:"Personal access tokens"`
+
+>is a job atomicity (expense/hour) value from labor if margins expand and price is constant
+
+`Tokens you have generated that can be used to access the GitHub API. Last used within the last week` repo & workflows
