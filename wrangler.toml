@@ -17,5 +17,6 @@ name = "fetch-rs" #fetch-rs.mastercard-backbank.backbank.workers.dev
 route = { pattern = "https://api.saltbank.org/*", zone_id = "6202e995eadc857cd8e97e8ba608286d" }
 
 [build]
-command = "worker-build --release" 
+command = "/worker-build --release" 
+#command = "worker-build --release" 
 # command = "wasm-pack build --target web"
