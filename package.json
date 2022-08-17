@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "module": "true",
+    "name": "mastercard-backbank",
+    "version": "1.0.0",
+    "description": "mastercard worker for vaumoney of vaults.biz",
+    "main": "worker/worker.js",
+    "scripts": {
+      "build":""
+    },
+    "author": "Nick <nmcarducci@gmail.com>",
+    "license": "UNLICENSED", 
+    "devDependencies": {
+    }, 
+    "false":{
+    }
+  }
+  
