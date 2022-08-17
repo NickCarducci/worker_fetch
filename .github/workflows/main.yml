@@ -30,9 +30,9 @@ jobs:
         shell: bash
         env:
           USER: root
+          # git update-index --chmod=+x && npm run build
         run: >
           npm run build
-          # git update-index --chmod=+x && npm run build
           
       - name: Navigate to repo
         run: cd $GITHUB_WORKSPACE
