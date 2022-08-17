@@ -9,6 +9,11 @@ on:
   push:
     branches:
       - master
+      #https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner
+permissions:
+  contents: read
+  # Needed for the 'trilom/file-changes-action' action
+  pull-requests: read
 jobs:
   build:
     runs-on: ubuntu-latest
