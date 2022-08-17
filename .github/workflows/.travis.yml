@@ -1,0 +1,10 @@
+# https://github.com/cloudflare/wirefilter/blob/1fea9c94fac4b1d880b6628316dcd0191de61278/.travis.yml
+language: rust
+cache: cargo
+matrix:
+  include:       
+      - name: "WASM build"
+        before_install:
+          - curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh -s -- -f
+        script:
+          - wasm-pack build wasm --debug --target browser --scope cloudflare
