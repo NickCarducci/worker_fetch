@@ -25,6 +25,15 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
+          
+      - name: Build
+        shell: bash
+        env:
+          USER: root
+        run: >
+          npm run build
+          # git update-index --chmod=+x && npm run build
+          
       - name: Navigate to repo
         run: cd $GITHUB_WORKSPACE
         
@@ -109,12 +118,6 @@ jobs:
         #env:
           #USER: root
           
-      - name: Build
-        shell: bash
-        env:
-          USER: root
-        run: >
-          git update-index --chmod=+x && npm run build
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
