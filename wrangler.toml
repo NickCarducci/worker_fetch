@@ -4,9 +4,8 @@ compatibility_date = "2022-08-16"
 account_id = "9ddca7c9df604668fc6d14f079b2f066" 
 workers_dev = false
 #route = ""
-#zone_id = ""
-# main = "build/worker/shim.mjs"
-main = "pkg"
+#zone_id = ""main = "build/worker/shim.mjs"
+# main = "pkg"
  
 
 [env.production]
