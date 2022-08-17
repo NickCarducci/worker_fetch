@@ -20,7 +20,10 @@ jobs:
     steps:
       #All commands you'll run after using the action/checkout will be executed at the repository root.
       #- uses: juliangruber/read-file-action@v1
-      - uses: actions/checkout@v2 #main
+      - name: Token GH & root
+        uses: actions/checkout@v2 #main
+        with:
+          token: ${{ secrets.GH_TOKEN }}
       
       - name: Navigate to repo
         run: cd $GITHUB_WORKSPACE
