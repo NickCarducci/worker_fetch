@@ -16,7 +16,8 @@ name = "fetch-rs" #fetch-rs.mastercard-backbank.backbank.workers.dev
 #route = "https://sausage.saltbank.org/api*"
 route = { pattern = "https://api.saltbank.org/*", zone_id = "6202e995eadc857cd8e97e8ba608286d" }
 
-#[build]
+[build]]
+command = "worker-build --release"
 #command = "./worker-build --release" permission denied, perhaps command by github action
 #command = "target/release --release" 
 # command = "wasm-pack build --target web"
