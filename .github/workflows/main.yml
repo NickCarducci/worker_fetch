@@ -32,7 +32,14 @@ jobs:
           USER: root
           # git update-index --chmod=+x && npm run build
         run: >
-          npm run build
+          cargo worker-build # npm run build
+      
+      #- uses: actions/setup-node@v2
+      #- run: |
+           #mkdir ~/.npm-global
+           #npm config set prefix '~/.npm-global'
+           #export PATH=~/.npm-global/bin:$PATH
+           #npm run build
           
       - name: Navigate to repo
         run: cd $GITHUB_WORKSPACE
