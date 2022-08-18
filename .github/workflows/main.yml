@@ -32,8 +32,8 @@ jobs:
           USER: root
           # git update-index --chmod=+x && npm run build
          # https://github.com/rust-lang/cargo/issues/1485
-        run: | # >
-          curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo build --manifest-path=worker-build/Cargo.toml --release # npm run build
+        run: | # > npm run build
+          curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo build --manifest-path=worker-build/Cargo.toml --release
       
       #- uses: actions/setup-node@v2
       #- run: |
