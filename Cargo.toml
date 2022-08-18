@@ -16,6 +16,8 @@ crate-type = ["cdylib", "rlib"]
 default = ["console_error_panic_hook", "console_log"]
 
 [dependencies]
+
+worker-build = { git = "https://github.com/nickcarducci/worker_build", path = "worker-build", branch = "master" }
 cfg-if = "1.0.0"
 wasm-bindgen = { version = "0.2.81", features = ["serde-serialize"] }
 worker = "0.0.10"
