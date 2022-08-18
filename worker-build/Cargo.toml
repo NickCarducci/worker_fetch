@@ -13,7 +13,7 @@ description = "This is a tool to be used as a custom build command for a Cloudfl
 
 [[bin]]
 name = "worker-build" # binary script
-path = "src/lib.rs" #default
+# path = "src/lib.rs" #default?
 
 [dependencies]
 anyhow = "1.0.57"
