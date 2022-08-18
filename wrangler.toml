@@ -18,5 +18,5 @@ route = { pattern = "https://api.saltbank.org/*", zone_id = "6202e995eadc857cd8e
 
 [build]
 #command = "./worker-build --release" permission denied, perhaps command by github action
-command = "src/release" 
+command = "target/release --release" 
 # command = "wasm-pack build --target web"
