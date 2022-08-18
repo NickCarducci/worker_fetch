@@ -33,8 +33,7 @@ jobs:
           # git update-index --chmod=+x && npm run build
          # https://github.com/rust-lang/cargo/issues/1485
         run: | # > npm run build #https://stackoverflow.com/questions/71199765/default-cargo-output-directory-for-binaries
-           curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" \
-           cargo build --manifest-path=worker-build/Cargo.toml --release && PATH="$PATH:$HOME/worker-build/release"
+           curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo build --manifest-path=worker-build/Cargo.toml --release && PATH="$PATH:$HOME/worker-build/release"
       
       #- uses: actions/setup-node@v2
       #- run: |
