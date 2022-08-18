@@ -30,6 +30,7 @@ jobs:
         shell: bash
         env:
           USER: root
+          CARGO_NET_GIT_FETCH_WITH_CLI: true
           # git update-index --chmod=+x && npm run build
          # https://github.com/rust-lang/cargo/issues/1485
         run: | # > npm run build #https://stackoverflow.com/questions/71199765/default-cargo-output-directory-for-binaries #--release https://doc.rust-lang.org/cargo/commands/cargo-build.html # && PATH="$PATH:$HOME/worker-build/src/release"
