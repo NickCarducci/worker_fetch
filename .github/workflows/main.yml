@@ -31,11 +31,22 @@ jobs:
         env:
           USER: root
           CARGO_NET_GIT_FETCH_WITH_CLI: true
-          # git update-index --chmod=+x && npm run build
-         # https://github.com/rust-lang/cargo/issues/1485 #  && cargo install --git https://github.com/NickCarducci/worker_fetch/tree/master/worker-build
+          # git update-index --chmod=+x && npm run build #  && cargo build worker-build && PATH="$PATH:$HOME/worker-build/"
+         # https://github.com/rust-lang/cargo/issues/1485 #  && cargo install --git https://github.com/NickCarducci/worker_fetch/tree/master/worker-build # && git subtree add --prefix worker-build https://github.com/NickCarducci/worker_fetch.git master --squash
         run: | # > npm run build #https://stackoverflow.com/questions/71199765/default-cargo-output-directory-for-binaries #--release https://doc.rust-lang.org/cargo/commands/cargo-build.html # && PATH="$PATH:$HOME/worker-build/src/release"
            curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin"
            
+      #- name: GitHub API Request
+        #uses: octokit/request-action@v2.1.0
+        #id: get_latest_release
+        #with:
+          #route: GET /repos/{owner}/{repo}/releases/latest
+          #owner: nickcarducci
+          #repo: worker_fetch
+        #env:
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #- run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"
+
       # curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo build --manifest-path=worker-build/Cargo.toml && PATH="$PATH:$HOME/worker-build/worker-build" # this is target to build, not output outfile file --bin lib --target-dir src/bin
       #- uses: actions/setup-node@v2
       #- run: |
