@@ -5,7 +5,7 @@ authors = ["ffimnsr"]
 edition = "2021"
 #publish = false
 description = "A worker with fetch functionality demo."
-license = "MIT OR Apache-2.0"
+license = ""
 
 [lib] #edition = "2021"
 #name = "build"https://github.com/cloudflare/rustwasm-worker-template/blob/master/Cargo.toml
