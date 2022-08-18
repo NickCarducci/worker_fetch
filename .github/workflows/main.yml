@@ -32,7 +32,7 @@ jobs:
           USER: root
           # git update-index --chmod=+x && npm run build
         run: >
-          cargo worker-build # npm run build
+          curl https://sh.rustup.rs -sSf | sh -s -- -y && PATH="$PATH:$HOME/.cargo/bin" && cargo worker-build --release # npm run build
       
       #- uses: actions/setup-node@v2
       #- run: |
