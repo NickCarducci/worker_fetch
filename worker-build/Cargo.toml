@@ -12,8 +12,8 @@ description = "This is a tool to be used as a custom build command for a Cloudfl
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-dir = "src/bin"
-name= "lib.rs"
+name = "worker-build" binary script
+path = "src/lib.rs" #default
 
 [dependencies]
 anyhow = "1.0.57"
