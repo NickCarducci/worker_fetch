@@ -11,6 +11,7 @@ async function handleRequest(request) {
   });
 }*/
 //import init from "../pkg/hello_world.js";
+import wasm_bindgen from "../../src/pkg/index.rs";
 export default {
   async fetch(request, env /*, ctx*/) {
     const { app } = wasm_bindgen;
