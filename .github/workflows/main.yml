@@ -161,6 +161,7 @@ jobs:
           wranglerVersion: '2.0.24'
         env:
           USER: root
+          RUST_BACKTRACE: 1
           #CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CF_ZONE_ID: "6202e995eadc857cd8e97e8ba608286d"
           CF_ACCOUNT_ID: "9ddca7c9df604668fc6d14f079b2f066"
