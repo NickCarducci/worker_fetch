@@ -9,7 +9,7 @@ license = ""
 
 [lib] #edition = "2021"
 #name = "build"https://github.com/cloudflare/rustwasm-worker-template/blob/master/Cargo.toml
-path = "src/lib.rs"
+#path = "src/lib.rs"
 crate-type = ["cdylib", "rlib"]
 
 [features]
