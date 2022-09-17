@@ -1,3 +1,5 @@
+"[If it’s a GET call, you can use a Worker](https://community.cloudflare.com/t/how-to-call-api-using-cloudflare/408641)"
+
 # Creating A Cloudflare Worker Using Rust That's Able To Fetch Remote Data
 
 This repo contains demo project that implements fetch ability in a cloudflare worker that is using rust and rustwasm:
